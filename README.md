@@ -8,7 +8,7 @@ PharmaBuilder is an interactive molecular pharmacophore modeling application. It
 
 #### Requirements
 
-- Operating system: Windows (10 or later), macOS (10.15 or later) and Linux
+- Operating system: Windows (10 or later), macOS (10.15 or later), or Linux
 - Python: Version 3.8 or later
 - Dependencies:
   - PyQt5
