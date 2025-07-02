@@ -72,7 +72,7 @@ PharmaBuilder provides the following export options:
   - Ball and stick model
   - Sphere model
   - Cartoon model
-- Pharmacophore feature detection, filtering, and 3D visualisation:
+- Pharmacophore feature detection, 3D visualisation, and filtering:
   - Hydrogen bond donors (HBD)
   - Hydrogen bond acceptors (HBA)
   - Positive ionisable groups (PI)
