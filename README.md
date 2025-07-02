@@ -105,7 +105,7 @@ Initial version.
 
 Copyright (c) 2025 André Maio, Diogo Torres, Pedro Lourenço (NOVA University Lisbon). All rights reserved.
 
-This program is licensed under the GNU General Public License (Version 3, 29 June 2007).
+This program is licensed under the GNU General Public License (version 3.0).
 
 **Authors**
 
