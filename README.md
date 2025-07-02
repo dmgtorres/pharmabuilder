@@ -1,16 +1,18 @@
+# PharmaBuilder
+
 ## Description
 
-PharmaBuilder is an interactive molecular pharmacophore modeling application. It enables users to load small-molecule structures, compute 3D pharmacophore features, and visualise them in a user-friendly GUI. Key functionalities include dynamic feature filtering, interactive 3D rendering, and export of pharmacophore data and snapshots.
+PharmaBuilder is an interactive molecular pharmacophore modeling application. This program enables users to load small-molecule structures, compute 3D pharmacophore features, and visualise them in a user-friendly GUI. Key functionalities include dynamic feature filtering, interactive 3D rendering, and export of pharmacophore data and snapshots.
 
-## User guide
+Further improvements for this program are under development.
 
-### Setup
+## Setup
 
-#### Requirements
+### Requirements
 
 - Operating system: Windows (version 10 or later), macOS (version 10.15 or later), or Linux
 - Python (version 3.8 or later)
-- Dependencies:
+- Python module dependencies:
   - PyQt5
   - PyQtWebEngine
   - RDKit
@@ -18,7 +20,7 @@ PharmaBuilder is an interactive molecular pharmacophore modeling application. It
   - Pillow
   - JSON (built-in)
 
-#### Installation
+### Installation
 
 1. **Clone the repository**
 
@@ -47,42 +49,48 @@ PharmaBuilder is an interactive molecular pharmacophore modeling application. It
    python src/main.py
    ```
 
-### Tutorial
+## Tutorial
 
-#### Input
+### Input
 
-- **SMILES strings** (e.g., `CC(=O)Oc1ccccc1C(=O)O`)
-- **Files**:
-  - `.mol` or `.sdf` for single-molecule files
-  - `.pdb` for protein or complex structures
+PharmaBuilder supports the following input formats:
+- **Manual input**: Copy and paste the SMILES string of the molecule directly into the text field to parse it using RDKit
+- **File upload**: Upload the MDL Molfile (.mol), SDF file (.sdf), or PDB file (.pdb) of the molecule to extract atom positions and bonds
 
-#### Output
+### Output
 
-- **Pharmacophore export**:
-  - JSON file containing filtered features
-  - Plain-text file with centroid coordinates
-- **Snapshot export**:
-  - PNG image of the current 3D view with legend
+PharmaBuilder provides the following export options:
+- **Filtered pharmacophore export**: Download a JSON file (.json) or plain-text file (.txt) containing pharmacophore features (type, atom identifier, and centroid 3D coordinates)
+- **Snapshot export**: Export a PNG image (.png) of the 2D molecular structure with pharmacophore features highlighted and a legend of feature types
 
-#### Features
+### Features
 
 - Automatic hydrogen addition, 3D embedding, and force-field optimisation
-- Pharmacophore feature detection:
+- Molecular structure 3D visualisation:
+  - Wire model
+  - Stick model
+  - Ball and stick model
+  - Sphere model
+  - Cartoon model
+- Pharmacophore feature detection, filtering, and 3D visualisation:
   - Hydrogen bond donors (HBD)
   - Hydrogen bond acceptors (HBA)
   - Positive ionisable groups (PI)
   - Negative ionisable groups (NI)
   - Hydrophobic groups (H)
   - Aromatic centers (AR)
-- Interactive legend to toggle feature visibility
-- Dynamic filtering of pharmacophore features
+- Interactive legend to toggle pharmacophore feature visibility
 
-#### Utilities
+### Utilities
 
 - **Clear filters**: Reset all active feature filters
-- **Snapshot**: Save the current 3D display with pharmacophore legend as `pharmacophore_snapshot.png`
+- **Snapshot**: Save the current 3D display with pharmacophore feature legend (with or without background) as `pharmacophore_snapshot.png`
 - **Export features**: Save the current filtered features to `filtered_features.json`
 - **Export centroids**: Save centroid coordinates to `centroids.txt`
+
+## Bugs
+
+Please send any bug reports to the authors with a complete test case.
 
 ## References
 
