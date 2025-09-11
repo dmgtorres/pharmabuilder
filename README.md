@@ -117,6 +117,6 @@ This program is licensed under the GNU General Public License (version 3.0).
 
 **Authors**
 
-- André Maio <<a.maio@campus.fct.unl.pt>>
+- André Maio <<andremarquesmaio@gmail.com>>
 - Diogo Torres <<dm.torres@campus.fct.unl.pt>>
 - Pedro Lourenço <<pg.lourenco@campus.fct.unl.pt>>
