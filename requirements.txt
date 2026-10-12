@@ -1,0 +1,5 @@
+PyQt5
+PyQtWebEngine
+rdkit
+py3Dmol
+Pillow
