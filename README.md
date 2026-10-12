@@ -25,7 +25,7 @@ Further improvements for this program are under development.
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/PharmaBuilder.git
+   git clone https://github.com/dmgtorres/PharmaBuilder.git
    cd PharmaBuilder
    ```
 
